@@ -1,64 +1,57 @@
-# 形狀消消樂網頁版 Shape Clear - HTML
-形狀消消樂網頁版是一個消消樂遊戲，使用 Phaser 遊戲引擎和 HTML5 規格
+# Shape Clear Versione Web Shape Clear - HTML
+Shape Match Web è un gioco di corrispondenza che utilizza il motore di gioco Phaser e le specifiche HTML5
 
-目前還沒有完成，但是可以來玩一下： <https://stdio2016.github.io/shapeclear-html>
+Non è ancora finito, ma puoi giocarci: <https://stdio2016.github.io/shapeclear-html>
 
-如果想要正常的版本，可以玩 Scratch 版(註：這個版本的原始碼不在這個代碼庫)。
-網址： <https://scratch.mit.edu/projects/17206808/>。
-手機、平板請用 <https://phosphorus.github.io/#17206808>
+Se vuoi la versione normale, puoi giocare alla versione Scratch (nota: il codice sorgente per questa versione non è in questa base di codice).
+URL: <https://scratch.mit.edu/projects/17206808/>.
+Per telefoni cellulari e tablet, utilizzare <https://phosphorus.github.io/#17206808>
 
-## 玩法
+## Come giocare
 
-用滑鼠或手指交換 2 個形狀，讓 3 個一樣的形狀，連成一條線，就可以消除。
+Scambia 2 forme con il mouse o il dito, in modo che 3 delle stesse forme possano essere eliminate collegandole in una linea.
 
-若是 4 個或 5 個連成線，或是呈 T/L 字形，就會產生道具
+Se 4 o 5 sono collegati in linea oa forma di T/L, verrà generato un elemento
 
-* 4 個連成線: 變出條紋
-* T/L 字形: 變出包裝形狀
-* 5 個連成線: 變出電擊器
+* 4 linee collegate: fai delle strisce
+* Forma T/L: cambia la forma della confezione
+* 5 fili collegati: cambia l'ammortizzatore
 
-把兩個道具交換會有意想不到的效果喔～
+Lo scambio dei due oggetti di scena avrà effetti inaspettati.
 
-## 動機
-我設計這個遊戲，只是想要模擬 Candy Crush，因為 Candy Crush 的關卡好難，又有生命限制，每 30 分鐘只能玩一次，想說來自己重做一個 Candy Crush 來玩，順便統計過關機率。
+## Funzione completata
 
-本來形狀消消樂是用 Scratch 做的，但是後來發現，Scratch 的效能太差，而且不支援手機、平板，為了支持攜帶型裝置，我必須重寫遊戲。
+1. Le forme possono essere scambiate (2017/2/17)
+2. 3 forme possono essere eliminate insieme (11/3/2017 Finalmente risolto il problema della forma a T e a forma di L)
+3. La forma può cadere dal cielo (1/4/2017)
+5. Funzioni di punteggio e cronometraggio (completato il 20 giugno 2017)
+8. Il testo del punteggio apparirà durante il punteggio (completato il 20/06/2017)
+4. La forma può essere lasciata cadere in diagonale (20/7/2017)
+7. Cultura cinese (2/2/2019)
+8. Più di 4 linee collegate creeranno oggetti di scena (completato il 2/10/2019)
+1. L'effetto si attiverà al momento della rimozione dell'oggetto (completato il 25/02/2019)
+9. Lo scambio di due articoli avrà effetti imprevisti (27/3/2019)
+1. Richiesta di posizioni scambiabili (25/1/2020)
+3. Quando non è possibile effettuare nuovamente lo scambio, tutte le forme verranno riorganizzate (completato il 31/3/2020)
 
-後來嘗試用 LibGDX 來重寫遊戲，想說來做 App，不過老師跟我說，App 的平台是專有的，做成 App 就限制了能夠使用的地方。老師推薦我寫成網頁，所以就來做 HTML5 版形狀消消樂，順便來學習怎麼用別人的函式庫
+## funzione non completata
 
-## 已完成功能
+Ce ne sono così tanti, le colonne non possono essere elencate
 
-1. 可以交換形狀 (2017/2/17完成)
-2. 3個形狀連在一起可以消 (2017/3/11終於處理好T字形和L字形的問題)
-3. 形狀可以天降 (2017/4/1完成)
-5. 計分、計時功能 (2017/6/20完成)
-8. 得分時會跳出分數文字 (2017/6/20完成)
-4. 形狀可以斜向掉落 (2017/7/20完成)
-7. 中文化 (2019/2/2達成)
-8. 4 個以上連成線會製造道具 (2019/2/10完成)
-1. 消掉道具會發動效果 (2019/2/25完成)
-9. 把兩個道具交換會有意想不到的效果 (2019/3/27完成)
-1. 提示可交換的位置 (2020/1/25完成)
-3. 沒有辦法再交換時，會重排所有形狀 (2020/3/31完成)
+Poiché le dimensioni della pagina Web possono essere modificate, anche la versione Web deve poter riorganizzare i componenti in base alle dimensioni dello schermo.
 
-## 未完成功能
+## Prospettive future
 
-有很多，列都列不完
+* più livelli
+* Più elementi di gioco, come ostacoli, portali, oggetti di scena speciali... ecc
+* Crea un editor di livelli
+* Suono e musica (in realtà ora c'è la musica)
+* Arte migliore (la mia arte è marcia, lo so)
+* Può condividere livelli
+* Distribuzione statistica del punteggio, percentuale di superamento, numero di forme eliminate, ecc.
+* Elenco dei punteggi più alti
 
-由於網頁的大小可以變動，因此網頁版還需要能依照畫面大小重新排列各個元件
-
-## 未來展望
-
-* 更多關卡
-* 更多的遊戲要素，例如障礙物、傳送門、特殊道具……等
-* 製作關卡編輯器
-* 聲音和音樂 (其實現在就有音樂了)
-* 好一點的美工 (我的美工爛死了，我知道)
-* 可以分享關卡
-* 統計分數分布、過關機率、消掉形狀數、……等
-* 高分榜
-
-## 作者
-* 程式：陳羿豐(就是 [stdio2016](https://www.github.com/stdio2016) 啦)
-* 圖片：陳羿豐(不，我畫的圖連小學生都會畫，而且超像用「小畫家」畫的)
-* 音樂：還是陳羿豐。也許你覺得音樂是 8bit 的，~~但其實，我是做 16bit 的音樂。~~ 好啦，我承認我做的就是 8bit 音樂，因為隨便寫個程式就能生了。XD
+## autore
+* Programma: Chen Yifeng (che è [stdio2016](https://www.github.com/stdio2016))
+*Immagine: Chen Yifeng (No, le immagini che disegno possono essere disegnate anche da studenti delle scuole elementari e sembrano disegnate da "Piccoli pittori")
+* Musica: ancora Chen Yifeng. Forse pensi che la musica sia a 8 bit,~~ ma in realtà faccio musica a 16 bit. ~~ Bene, ammetto che quello che faccio è musica a 8 bit, perché basta scrivere un programma e puoi farlo. XD
